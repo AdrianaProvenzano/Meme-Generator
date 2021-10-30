@@ -229,11 +229,12 @@ app.post('/api/memes', isLoggedIn, [
   }
 
   // controllo che non ci siano più testi del dovuto
-  const template = await memeDao.getTemplateById(req.body.template);
+  
+  /*const template = await memeDao.getTemplateById(req.body.template);
   if(template.num_field==1 && (req.body.text2!="" || req.body.text3!=""))
     return res.status(422).json({ error: `Text2 and Text3 must be empty strings` });
   if(template.num_field==2 && req.body.text3!="")
-    return res.status(422).json({ error: `Text3 must be an empty string` });
+    return res.status(422).json({ error: `Text3 must be an empty string` });*/
 
     const meme = {
     title: req.body.title,

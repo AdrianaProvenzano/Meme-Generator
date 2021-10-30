@@ -11,14 +11,6 @@ import { Row, Container, Alert } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 const App = () => {
-  return (
-    <Router>
-      <Main></Main>
-    </Router>
-  );
-}
-
-const Main = () => {
   const [memes, setMemes] = useState([]);
   const [templates, setTemplates] = useState([]);
   const [dirty, setDirty] = useState(true);
